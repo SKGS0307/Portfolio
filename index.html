@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <a href="https://www.youtube.com/">
+      <div class="logo">
+        <!-- <img src="./logo.jpg" alt=""> -->
+
+        </div>
+      </a>
+      <div id="nav-links">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- <img src="./saurabh.png" alt="John Doe profile picture" /> -->
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Saurabh Kumar</h1>
+        <p class="section__text__p2">Software Developer, Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/saurabh-kumar-516a93234/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SKGS0307'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container1">
+          <img
+            src="./igjgfg8i.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Web Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Bachelors Degree<br />Chemical Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello everyone, I am Saurabh an undergraduate student 
+              at Indian Institute of Technology Kanpur<b id="IITKanpur">(IIT Kanpur)</b>. My department is 
+              Chemical engineering. I have a youtube channel name 
+              <a href="https://www.youtube.com/@iitiancamera" id="youtubechannel">IITian Camera</a>
+               which contain around 9.1k subscriber.If you want to know more about join
+               me on <a href="https://www.instagram.com/s_k_0307/" id="instagram">Instagram</a>.
+              
+              </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Skills section -->
+
+    <section id="skills">
+
+      <div class="skillstext">
+
+        <h1 id="skillcss">Skills</h1>
+      </div>
+
+      <div class="skills-Container">
+
+        <div class="software">
+          <h3>Software:</h3>
+          <p>Git, GitBash, Photoshop, Premiere Pro, After Effects, Excel, Word, MySQL, Aspen+, Wordpress</p>
+        </div>
+
+        <div class="languages">
+
+          <h3>Programming Languages:</h3>
+          <p>C, C++, Python, Html, JavaScript, CSS, Latex, Matlab</p>
+          
+        </div>
+
+        <div class="Frameworks">
+        
+          <h3>Frameworks:</h3>
+          <p>ReactJS, Next.js, NodeJS, Express, Flowbite, Bootstrap, Tailwind Css, GSAP, Elementor, shadcn-ui, Clerk | Authentication and User Management,Mux</p>
+          
+          
+        
+        </div>
+
+        <div class="Frameworks">
+        
+          <h3>Areas of Interests: </h3>
+          <p> Data Structures and Algorithms, Web Development, Data Analytics(Learning)</p>
+        
+        
+        
+        </div>
+
+        <div class="Hobbies">
+        
+          <h3>Hobbies :</h3>
+          <p> Chess, Cricket, volleyball, To make videos on youtube and edit them, To click photos and edit them</p>
+        
+        
+        
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>GSAP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Next.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>GitBash</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Prisma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Data Structures and Algorithms</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <h5 class="subtitle">Project are freely hosted so it will take time to load</h5>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Web Chat App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SKGS0307'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://mernfullchat.onrender.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Web Socket Chat App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SKGS0307'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://chat-app-kk88.onrender.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SKGS0307'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+      <h4 class="MoreProject">More Projects are about to live</h4>
+    </section>
+
+
+    <!-- Extracurriculars -->
+
+    <section id="Extracurriculars">
+      <div class="PORtext">
+      
+        <h1 id="skillcss">Positions of Responsibility</h1>
+      </div>
+
+      <div class="por1-container">
+
+        
+        <div id="subextra">
+          <h3>Company Coordinator Students Placements Office, IITK <em>(June’23 - Apr’24)</em> </h3> 
+          
+        </div>
+
+        <div>
+
+          
+          <li class="por2-container">
+            Collaborated in a 4-tier team to conduct Internship Drive for <b>1100+ students</b>  and Placement Drive for <b>1400+ students</b> 
+            
+          </li>
+          
+          <li class="por2-container">
+          Co-ordinated with companies like <b>AlphaGrep</b> and <b>Texas Instruments</b> to hold placement and internship tests and interviews
+            
+          </li>
+        </div>
+        
+      </div>
+
+      <div class="por1-container">
+      
+      
+        <div id="subextra">
+          <h3>Academic Mentor - TA111 | Counselling Services, <em>IITK(May’23 - Apr’24)</em></h3>
+      
+        </div>
+      
+        <div>
+      
+      
+          <li class="por2-container">
+            <b>Conducted lectures</b> on Engineering Graphics at institute level to clarify doubts of students before their semester exams.
+      
+          </li>
+      
+          <li class="por2-container">
+            Mentored academically weak students one-to-one and delivered institute level remedial classes for <b>150+ freshers</b> 
+      
+          </li>
+        </div>
+      
+      </div>
+      
+      <div class="por1-container">
+      
+      
+        <div id="subextra">
+          <h3>Secretary | Outreach Cell, IITK <em>(Aug’23 - Oct’23)</em></h3>
+      
+        </div>
+      
+        <div>
+      
+      
+          <li class="por2-container">
+            Assisted in <b>executing theconvocation ceremony</b> for the Y19 batch, ensuring smooth operations and a memorable event
+      
+          </li>
+      
+          <li class="por2-container">
+            <b>Coordinated Mock-en-Joy</b>, conducting online mock interviews to prepare students for <b>internships for Y21 batch</b>
+      
+          </li>
+          <li>
+            <b>Contributed in organizing alumni reunions</b>, fostering connections between current students and previous batches
+          </li>
+        </div>
+      
+      </div>
+
+      <!-- extra by ourselfs -->
+
+      <div class="PORtext">
+      
+        <h1 id="skillcss">Extra Curricular Activities</h1>
+      </div>
+      <div  class="por3-container">
+
+        <li>Successfully managing <b>two YouTube</b> channels,with over <b>10k subscriber</b>, by strategic content creation and audience
+          engagement</li>
+          <li>Participated in a <b>dance competition</b>  during <b>Fresher Night</b>, showcasing performance skills and teamwork in a high-energy
+            event</li>
+            <li>Won a <b>gold medal</b> in cricket at the <b>inter-hall sports competition</b>, Inferno, demonstrating leadership, teamwork, and
+              skills</li>
+            <li>Secured <b>3rd position</b> in the Get Set Launch competition organized by the Institute Consulting Group</li>
+            <li>
+              I am cultivating a reading habit to broaden perspectives, fuel creativity, and enhance personal growth
+            </li>
+        </div>
+      
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+
+
+        <!-- email -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sourabhkumar4038@gmail.com">sourabhkumar4038@gmail.com</a></p>
+        </div>
+
+
+        <!-- linkedin -->
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saurabh-kumar-516a93234/">LinkedIn</a></p>
+        </div>
+
+
+
+        <!-- Instagram -->
+
+        <div class="contact-info-container">
+          <img src="./assets/instagram.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.instagram.com/s_k_0307/">Instagram</a></p>
+        </div>
+
+        <!-- Facebook -->
+        <div class="contact-info-container">
+          <img src="./assets/facebook.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.facebook.com/profile.php?id=100085548411427">Facebook</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Saurabh Kumar. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
